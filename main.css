@@ -1,0 +1,49 @@
+.container {
+	width:auto;
+	height:auto;
+	background-color:red;
+	padding:20px;
+	border:10px solid #960018;
+	border-radius:25px;
+	margin: 0;
+}
+
+
+.item {
+	background-color: white;
+	width: 180px;
+	height: 50px;
+	margin: 10px;
+}
+
+.title {
+	background-color: red;
+	width: 180px;
+	height: 50px;
+	margin: 10px;
+	text-align: center;
+}
+
+input {
+	font-size: 200%;
+	position: relative;
+	border:10px solid #960018;
+	margin: 10px;
+}
+
+.title {
+	width:400px;
+	height: auto;
+	position: relative;
+}
+
+h2 {
+	color: white;
+}
+
+.green_leaf {
+	position: fixed;
+	right: -85px;
+	top: -85px;
+	width: 180px;
+}
