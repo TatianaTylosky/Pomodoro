@@ -4,32 +4,41 @@
 	<meta charset="UTF-8">
 	<title>Pomodero</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
+
 <body>
 <div class="container">
-	<img class="green_leaf" src="green_leaf2.png" />
-	<form>
+		<div class="clock">
+			<p>00:20:00<p class="shadow">00:20:00</p></p>
+		</div>
+		<img class="green_leaf" src="green_leaf8.png" />
 		<div class="title">
 			<img class="title" src="pomodoro.png" />
 		</div>
-		<div>
+		<form>
 			<table>
 				<tr>
 					<td>
-						<input placeholder="activity">
+						<input id="activity" placeholder="activity">
 						</input>
 					</td>
 					<td>
-						<input placeholder="minutes">
+						<input id="minutes" placeholder="minutes">
 						</input>
 					</td>
 					<td>
-						<img width="50px" src="add3.png"/>
+						<div class="color_picker"></div>
+					</td>
+					<td>
+						<img class="add" width="50px" src="add3.png"/>
 					</td>
 				</tr>
 			</table>
-		</div>
-	</form>
+		</form>
+		<table class="list">
+		</table>
 </div>
 	
 </body>

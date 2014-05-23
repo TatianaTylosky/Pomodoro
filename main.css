@@ -1,13 +1,43 @@
+table.list {
+	border-collapse:separate;
+	border-spacing: 27px 0px;
+}
+
+td {
+	padding: 10px;
+}
+
+body {
+	background-color: black;
+}
+
 .container {
 	width:auto;
 	height:auto;
 	background-color:red;
 	padding:20px;
 	border:10px solid #960018;
-	border-radius:25px;
+	border-radius:200px;
 	margin: 0;
 }
 
+.newitem {
+}
+
+.data {
+	/*background-color: white;
+	border:10px solid #960018;*/
+	width: 320px;
+	height: 30px;
+	margin: 10px;
+	left: 10px;
+	position: relative;
+	padding: 5px;
+	margin: 10px;
+	font-size: 200%;
+	font-family: sans-serif;
+	color: white;
+}
 
 .item {
 	background-color: white;
@@ -16,26 +46,25 @@
 	margin: 10px;
 }
 
-.title {
-	background-color: red;
-	width: 180px;
-	height: 50px;
-	margin: 10px;
-	text-align: center;
-}
-
-input {
-	font-size: 200%;
+.delete {
 	position: relative;
-	border:10px solid #960018;
-	margin: 10px;
+	top: 13px;
 }
 
 .title {
 	width:400px;
 	height: auto;
 	position: relative;
+	float: left;
+	left: 70px;
 }
+
+input {
+	font-size: 200%;
+	position: relative;
+	border:10px solid #960018;
+}
+
 
 h2 {
 	color: white;
@@ -43,7 +72,45 @@ h2 {
 
 .green_leaf {
 	position: fixed;
-	right: -85px;
-	top: -85px;
+	left: 10px;
+	top: -10px;
 	width: 180px;
 }
+
+.color_picker {
+	width: 40px;
+	height: 40px;
+	background-color: purple;
+	border:10px solid #960018;
+	position: relative;
+}
+
+.clock {
+	width: 100px;
+	height: 50px;
+	right: 300px;
+	top: -40px;
+	position: fixed;
+}
+
+p {
+	font-size: 450%;
+	color: white;
+	font-family: sans-serif;
+	position: relative;
+	z-index: 2;
+}
+
+.shadow {
+	font-size: 450%;
+	color: #960018;
+	font-family: sans-serif;
+	position: relative;
+	bottom: 155px;
+	right: 4px;
+	z-index: 1;
+}
+
+/*add {
+	margin: 50px;
+}*/

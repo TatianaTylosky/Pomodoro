@@ -1,47 +1,45 @@
 $(document).ready(function(){
-	$("#add").click (function(){
-		var my_text = $("#entry").val();
-		var my_item = $('<div class="food"></div>').text(my_text);
+	// SOME EVENT LISTENER
+	$(".add").mousedown(function(){
 
-		my_item.on('click', function(){
-			$(this).toggleClass("checked_food");
-		});
+	var activity = $( "#activity" ).val();
+	var minutes = $( "#minutes" ).val();
 
-		my_item.on('dblclick', function(){
-			$(this).fadeOut('fast');
-		});
+	
 
-		if (my_text!=""){
-			$("#wrap").append(my_item);
-			$("#entry").val("");
-		}
+	$("table.list").append("<div></div>");
 
-		else{alert("Type an item in before you add it.")}
+	$("table.list > div").last().addClass("newitem");
+
+	$("div.newitem").last().append("<tr></tr>");
+
+	$("div.newitem > tr").last().hide().append('<img class="delete" position="relative" top="5px" width="50px"src="delete.png" />').fadeIn("slow");
+
+	$("table.list > div > tr").last().append("<td></td>");
+	$("table.list > div > tr > td").addClass("data");
+	$("table.list > div > tr > td").last().hide().fadeIn("slow").append(activity);
+
+	// $("table.list > div.newitem").children('td:last').append(activity);
+
+	$("table.list > div > tr").last().append("<td></td>");
+	$("table.list > div > tr > td").addClass("data");
+	$("table.list > div > tr > td").last().hide().append(minutes).fadeIn("slow");
+
+	// $("table.list > div.newitem").children('td:last').append(minutes);
+
+	// alert("it sort of worked?");
+
 	});
-  
-  $(document).keypress(function(e){
-    if(e.which == 13){
-    	var my_text = $("#entry").val();
-			var my_item = $('<div class="food"></div>').text(my_text);
+	
+	// $(".container").shake();
+	
 
-			my_item.on('click', function(){
-				$(this).toggleClass("checked_food");
-			});
 
-			my_item.on('dblclick', function(){
-				$(this).fadeOut('fast');
-			});
+	// $(".color_picker").mouseover(function(){
+	// 	$(".color_table").show();
+	// });
 
-			if (my_text!="")
-			{
-				$("#wrap").append(my_item);
-				$("#entry").val("");
-			}
-
-			else 
-			{
-				alert("Type an item in before you add it.")
-			}
-    }
-	});
+	// $(".color_table").moveoff(function(){
+	// 	$(this).hide();
+	// });
 });
