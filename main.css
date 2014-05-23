@@ -8,7 +8,7 @@ td {
 }
 
 body {
-	background-color: black;
+background-color: black;
 }
 
 .container {
@@ -83,6 +83,7 @@ h2 {
 	background-color: purple;
 	border:10px solid #960018;
 	position: relative;
+	display: none;
 }
 
 .clock {
@@ -91,6 +92,7 @@ h2 {
 	right: 300px;
 	top: -40px;
 	position: fixed;
+	display: none;
 }
 
 p {
@@ -109,6 +111,11 @@ p {
 	bottom: 155px;
 	right: 4px;
 	z-index: 1;
+}
+
+.bottom {
+	width: 100%;
+	height: 45px;
 }
 
 /*add {

@@ -1,11 +1,7 @@
-$(document).ready(function(){
-	// SOME EVENT LISTENER
-	$(".add").mousedown(function(){
+var additem = function () {
 
 	var activity = $( "#activity" ).val();
 	var minutes = $( "#minutes" ).val();
-
-	
 
 	$("table.list").append("<div></div>");
 
@@ -19,27 +15,36 @@ $(document).ready(function(){
 	$("table.list > div > tr > td").addClass("data");
 	$("table.list > div > tr > td").last().hide().fadeIn("slow").append(activity);
 
-	// $("table.list > div.newitem").children('td:last').append(activity);
+
 
 	$("table.list > div > tr").last().append("<td></td>");
 	$("table.list > div > tr > td").addClass("data");
 	$("table.list > div > tr > td").last().hide().append(minutes).fadeIn("slow");
 
-	// $("table.list > div.newitem").children('td:last').append(minutes);
 
-	// alert("it sort of worked?");
 
-	});
+	};
+
+
+$(document).ready(function(){
+	
+	$('.add').click(additem);
+
+	$('img.delete').on('click', function(){
+		$(this).closest('div.newitem').remove();
+		alert("sdfds");
+});
 	
 	// $(".container").shake();
 	
 
 
 	// $(".color_picker").mouseover(function(){
-	// 	$(".color_table").show();
+	//	$(".color_table").show();
 	// });
 
 	// $(".color_table").moveoff(function(){
-	// 	$(this).hide();
+	//	$(this).hide();
 	// });
 });
+
