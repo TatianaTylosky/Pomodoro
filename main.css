@@ -74,7 +74,8 @@ background-color: black;
 	height: auto;
 	position: relative;
 	float: left;
-	left: 70px;
+	left: 100px;
+	z-index: 2;
 }
 
 input {
@@ -93,6 +94,7 @@ h2 {
 	left: 10px;
 	top: -10px;
 	width: 180px;
+	z-index: 3;
 }
 
 .color_picker {

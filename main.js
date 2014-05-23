@@ -15,7 +15,11 @@ $( document ).ready(function() {
 
 });
 
-var additem = function () {
+function playdrop () {
+	$('#drop')[0].play();
+}
+
+function additem () {
 
 	var activity = $( "#activity" ).val();
 	var minutes = $( "#minutes" ).val();
@@ -61,8 +65,9 @@ var additem = function () {
 	$("table.list > div > tr > td").last().hide().append(minutes).fadeIn("slow");
 
 	$(".container").find("input[type=text]").val("");
-
-	$( ".container" ).effect( "shake" );
+	playdrop();
+	$('.container').transition({ scale: 2.2});
+	// $( ".container" ).effect( "shake" );
 
 	}
 
@@ -73,4 +78,4 @@ var additem = function () {
 		$(".container").find("input[type=text]").val("");
 		return 0;
 	}
-	};
+	}
