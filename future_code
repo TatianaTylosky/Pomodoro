@@ -1,0 +1,11 @@
+	// $(".container").shake();
+	
+
+
+	// $(".color_picker").mouseover(function(){
+	//	$(".color_table").show();
+	// });
+
+	// $(".color_table").moveoff(function(){
+	//	$(this).hide();
+	// });
