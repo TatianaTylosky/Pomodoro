@@ -16,6 +16,13 @@ td {
 	padding: 10px;
 }
 
+.player {
+	width: 60px;
+	position: relative;
+	float: right;
+	right: 50px;
+}
+
 body {
 background-color: black;
 }
@@ -69,14 +76,6 @@ background-color: black;
 	top: 13px;
 }
 
-.title {
-	width:400px;
-	height: auto;
-	position: relative;
-	float: left;
-	left: 100px;
-	z-index: 2;
-}
 
 input {
 	font-size: 200%;
@@ -89,31 +88,55 @@ h2 {
 	color: white;
 }
 
-.green_leaf {
-	position: fixed;
-	left: 10px;
-	top: -10px;
-	width: 180px;
-	z-index: 3;
+.header {
+	position: relative;
+	float: left;
+	width: 100%; 
 }
 
-.color_picker {
-	width: 40px;
-	height: 40px;
-	background-color: purple;
-	border:10px solid #960018;
-	position: relative;
-	display: none;
+.green_leaf {
+	position: absolute;
+	float: none;
+	bottom: 100px;
 }
 
 .clock {
-	width: 100px;
-	height: 50px;
-	right: 300px;
-	top: -40px;
-	position: fixed;
-	display: none;
+	float: right;
+	position: relative;
+	right: 50px;
 }
+
+.shadow {
+	font-size: 450%;
+	color: #960018;
+	font-family: sans-serif;
+	position: relative;
+	z-index: 1;
+	bottom: 90px;
+}
+
+.title {
+	width:500px;
+	height: auto;
+	position: relative;
+	float: left;
+	left: 100px;
+}
+
+.player {
+	width: 60px;
+	position: relative;
+	float: right;
+	right: 70px;
+	top: 10px;
+}
+
+.color_picker {
+	position: relative;
+	height: 40px;
+	width: 40px;
+}
+
 
 
 p {
@@ -122,16 +145,7 @@ p {
 	font-family: sans-serif;
 	position: relative;
 	z-index: 2;
-}
-
-.shadow {
-	font-size: 450%;
-	color: #960018;
-	font-family: sans-serif;
-	position: relative;
-	bottom: 155px;
-	right: 4px;
-	z-index: 1;
+	margin: 0;
 }
 
 .bottom {

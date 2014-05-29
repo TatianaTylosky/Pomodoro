@@ -27,7 +27,6 @@ function additem () {
 	if (activity === "" && minutes === "") {
 		$("#activity").fadeIn(100).fadeOut(100).fadeIn(100);
 		$("#minutes").fadeIn(100).fadeOut(100).fadeIn(100);
-		$(".container").find("input[type=text]").val("");
 		return 0;
 	}
 

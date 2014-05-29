@@ -6,32 +6,36 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="main.js"></script>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 </head>
 
 <body>
 <div class="container">
+	<div class="header">
+		<img class="green_leaf" src="green_leaf8.png" />
 		<div class="clock">
 			<p>00:20:00<p class="shadow">00:20:00</p></p>
 		</div>
-		<img class="green_leaf" src="green_leaf8.png" />
-		<div>
-			<img class="title" src="pomodoro.png" />
-			<div class="player"> <i class="fa fa-play"></i> </div>
-		</div>
+		
+		<img class="title" src="pomodoro.png" />
+			
+		<img class="player" src="pause.png" />
+		<img class="player" src="stop.png" />
+		<img class="player" src="play.png" />
+	</div>
 		<form>
 			<table>
 				<tr>
 					<td>
-						<input type="text" id="activity" placeholder="Activity">
+						<input type="text" id="activity" placeholder="Activity" required>
 						</input>
 					</td>
 					<td>
-						<input type="text" id="minutes" placeholder="Minutes">
+						<input type="number" id="minutes" placeholder="Minutes" required>
 						</input>
 					</td>
 					<td>
-						<div class="color_picker"></div>
+						<input class="color_picker" type="color" name="favcolor">
 					</td>
 					<td>
 						<img class="add" width="60px" src="add.png"/>
