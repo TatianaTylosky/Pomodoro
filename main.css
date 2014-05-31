@@ -1,48 +1,32 @@
-@font-face {
-    font-family: 'NOVA'; /*a name to be used later*/
-    src: url('NOVABOLD.otf'); /*URL to font*/
-}
-
-.classname {
+/*@font-face {
     font-family: 'NOVA';
-}
+    src: url('NOVABOLD.otf');
+}*/
 
-table.list {
+/*.classname {
+    font-family: 'NOVA';
+}*/
+
+/*table.list {
 	border-collapse:separate;
 	border-spacing: 27px 0px;
-}
+}*/
 
-td {
+/*td {
 	padding: 10px;
-}
+}*/
 
-.player {
+/*.player {
 	width: 60px;
 	position: relative;
 	float: right;
 	right: 50px;
-}
+}*/
 
-body {
-background-color: black;
-}
 
-.container {
-	width:auto;
-	height:auto;
-	background-color:red;
-	padding:20px;
+/*.data {
+	background-color: white;
 	border:10px solid #960018;
-	border-radius:200px;
-	margin: 0;
-}
-
-.newitem {
-}
-
-.data {
-	/*background-color: white;
-	border:10px solid #960018;*/
 	width: 320px;
 	height: 30px;
 	margin: 10px;
@@ -54,101 +38,130 @@ background-color: black;
 	color: white;
 	text-shadow: 2px 2px #960018;
 
-}
+}*/
 
-.activity {
+/*.activity {
 	font-family: 'NOVA';
 }
-
-.minutes {
+*/
+/*.minutes {
 		font-family: sans-serif;
-}
+}*/
 
-.item {
+/*.item {
 	background-color: white;
 	width: 180px;
 	height: 50px;
 	margin: 10px;
-}
+}*/
 
-.delete {
+/*.delete {
 	position: relative;
 	top: 13px;
-}
+}*/
 
 
-input {
+/*input {
 	font-size: 200%;
 	position: relative;
 	border:10px solid #960018;
-}
+}*/
 
 
-h2 {
+/*h2 {
 	color: white;
-}
+}*/
 
-.header {
+/*.controls {
 	position: relative;
 	float: left;
-	width: 100%; 
-}
+	width: 100%;
+}*/
 
-.green_leaf {
-	position: absolute;
-	float: none;
-	bottom: 100px;
-}
-
-.clock {
+/*.clock {
 	float: right;
 	position: relative;
-	right: 50px;
-}
+}*/
 
-.shadow {
+/*table {
+	border: solid 5px black;
+}*/
+
+/*.shadow {
 	font-size: 450%;
 	color: #960018;
 	font-family: sans-serif;
 	position: relative;
 	z-index: 1;
 	bottom: 90px;
-}
+}*/
 
-.title {
+/*.title {
 	width:500px;
 	height: auto;
 	position: relative;
-	float: left;
-	left: 100px;
-}
+}*/
 
-.player {
+/*.player {
 	width: 60px;
 	position: relative;
 	float: right;
 	right: 70px;
 	top: 10px;
-}
+}*/
 
-.color_picker {
+/*.color_picker {
 	position: relative;
 	height: 40px;
 	width: 40px;
-}
+}*/
 
 
-
-p {
+/*p {
 	font-size: 450%;
 	color: white;
 	font-family: sans-serif;
 	position: relative;
 	z-index: 2;
 	margin: 0;
-}
+}*/
 
-.bottom {
+/*.bottom {
 	width: 100%;
 	height: 45px;
+}*/
+
+body {
+background-color: black;
+}
+
+.green_leaf {
+	position: fixed;
+	width: 250px;
+	height: auto;
+	left: -50px;
+	top: 0px;
+}
+
+tr {
+	border: solid 5px black;
+}
+
+td {
+	border: solid 5px black;
+}
+
+img {
+	height: 100px;
+	width: auto;
+}
+
+.tomato_container {
+	width:auto;
+	height:auto;
+	background-color:red;
+	padding:20px;
+	border:10px solid #960018;
+	border-radius:200px;
+	margin: 0;
 }

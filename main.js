@@ -32,14 +32,14 @@ function additem () {
 
 	else if (activity === "") {
 		$("#activity").fadeIn(100).fadeOut(100).fadeIn(100);
-		$(".container").find("input[type=text]").val("");
+		$(".tomato_container").find("input[type=text]").val("");
 		return 0;
 	}
 
 
 	else if (minutes === "") {
 		$("#minutes").fadeIn(100).fadeOut(100).fadeIn(100);
-		$(".container").find("input[type=text]").val("");
+		$(".tomato_container").find("input[type=text]").val("");
 		return 0;
 	}
 
@@ -63,10 +63,10 @@ function additem () {
 	$("table.list > div > tr > td").last().addClass("data").addClass("minutes");
 	$("table.list > div > tr > td").last().hide().append(minutes).fadeIn("slow");
 
-	$(".container").find("input[type=text]").val("");
+	$(".tomato_container").find("input[type=text]").val("");
 	playdrop();
-	$('.container').transition({ scale: 2.2});
-	// $( ".container" ).effect( "shake" );
+	$('.tomato_container').transition({ scale: 2.2});
+	// $( ".tomato_container" ).effect( "shake" );
 
 	}
 
@@ -74,7 +74,7 @@ function additem () {
 
 		$("#activity").fadeIn(100).fadeOut(100).fadeIn(100);
 		$("#minutes").fadeIn(100).fadeOut(100).fadeIn(100);
-		$(".container").find("input[type=text]").val("");
+		$(".tomato_container").find("input[type=text]").val("");
 		return 0;
 	}
 	}

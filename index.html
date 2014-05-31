@@ -1,53 +1,60 @@
 <!doctype html>
-	<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<title>
-				Pomodero
+	<html lang="en"> <!-- Does html exist in other languages? -->
+		<head> <!-- Stuff in the head is stuff that doesn't appear directly on the page but loads things so that the page renders properly? -->
+			<meta charset="UTF-8"> <!-- What does this actually mean? -->
+			<title> <!-- Title that appears on the tab -->
+				Tomodoro
 			</title>
-			<link rel="stylesheet" type="text/css" href="main.css">
-			<script src="http://code.jquery.com/jquery.min.js">
-			</script>
+			<link rel="stylesheet" type="text/css" href="main.css"> <!-- This loads my style sheet which applies various attributes to HTML tags, is the type attribute irrelevant with html5?-->
+			<script src="http://code.jquery.com/jquery.min.js"></script> <!-- This loads the jquery library from the internetz. Does the script tag always refer to javascript or are their other things?-->
 			<script src="main.js">
-			</script>
+			</script> <!-- This loads my javascript file -->
 		</head>
-		<body>
-			<div class="container">
-				<div class="header">
-					<img class="green_leaf" src="green_leaf8.png" />
-					<div class="clock">
-						<p>
-							00:20:00<p class="shadow">00:20:00</p>
-						</p>
-					</div>
-					<img class="title" src="pomodoro.png" />
-					<img class="player" src="pause.png" />
-					<img class="player" src="stop.png" />
-					<img class="player" src="play.png" />
-				</div>
-					<form>
-						<table>
-							<tr>
-								<td>
-									<input type="text" id="activity" placeholder="Activity" required>
-									</input>
-								</td>
-								<td>
-									<input type="number" id="minutes" placeholder="Minutes" required>
-									</input>
-								</td>
-								<td>
-									<input class="color_picker" type="color" name="favcolor">
-								</td>
-								<td>
-									<img class="add" width="60px" src="add.png"/>
-								</td>
-							</tr>
-						</table>
-					</form>
-					<table class="list">
-					</table>
-				<div class="bottom"></div>
+		<body> <!-- All the stuff the makes up the skeleton of the web page -->
+			<img class="green_leaf" src="green_leaf8.png" />
+			<div class="tomato_container">
+			<table class="controls">
+				<tr>
+					<td>
+						<img class="title" src="pomodoro.png" />
+					</td>
+					<td>
+						<img class="player" src="pause.png" />
+						<img class="player" src="stop.png" />
+						<img class="player" src="play.png" />
+					</td>
+					<td>
+						<div class="clock">
+							<p>00:20:00<p class="shadow">00:20:00</p>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<form>
+				<table>
+					<tr>
+						<td>
+							<input type="text" id="activity" placeholder="Activity" required>
+							</input>
+						</td>
+						<td>
+							<input type="number" id="minutes" placeholder="Minutes" required>
+							</input>
+						</td>
+						<td>
+							<input class="color_picker" type="color" name="favcolor">
+						</td>
+						<td>
+							<img class="add" width="60px" src="add.png"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<table class="list">
+			</table>
+			<div class="bottom">
+			</div>
 			</div>
 			<audio id="drop" src="drop.wav">
 		</body>
